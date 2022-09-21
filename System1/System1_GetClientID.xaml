@@ -7,7 +7,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>466,864</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>566,1111.33333333333</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>GetClientDetails_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
@@ -81,19 +81,19 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GetClientDetails" sap:VirtualizedContainerService.HintSize="476,799.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GetClientDetails" sap:VirtualizedContainerService.HintSize="476,1046.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: ACME System 1 - Work Items" sap:VirtualizedContainerService.HintSize="434,707.333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="706f2a43-f13c-4e5c-a36d-29a55b63cd0d" Version="V2">
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: ACME System 1 - Work Items" sap:VirtualizedContainerService.HintSize="434,954.666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="706f2a43-f13c-4e5c-a36d-29a55b63cd0d" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,489.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,736.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="InfoDetails" />
             </Sequence.Variables>
@@ -102,11 +102,13 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
+            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="334,83.3333333333333" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="[in_URL + &quot;work-items/&quot; + in_WIID.ToString]" Version="V1" />
+            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
             <uix:NGetText DisplayName="Get Text 'Account Information'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="706f2a43-f13c-4e5c-a36d-29a55b63cd0d" Version="V1">
               <uix:NGetText.Target>
                 <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/work-items/86941542" DesignTimeRectangle="255, 664, 560, 120" ElementType="Text" FriendlyName="'Client ID:'" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='' aaname='                          XW47730                          749310                          1098852 EUR                                              ' /&gt;" Guid="881487f8-1079-44f7-aadf-4242d5316821" InformativeScreenshot="329559af025004c6a79dc262755dba88.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target DesignTimeRectangle="255, 619, 560, 30" ElementType="Text" FriendlyName="'Account Information'" FullSelectorArgument="&lt;webctrl tag='H4' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H4' type='' class='' aaname='Account Information Details' check:innerText='Account Information Details' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -125,6 +127,7 @@
               </Assign.Value>
             </Assign>
             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[out_ClientID]" />
+            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_2" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
